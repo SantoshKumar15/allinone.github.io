@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Times New Roman;
+}
+
+/*
+.progress {
+    height: 2px;
+    width: 0px;
+    background-color: red;
+    animation: progress 3s 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 100vw;
+    }
+}
+*/
+
+.header {
+    height: 11vh;
+    width: 100vw;
+    border: 2px solid #2874A6;
+    background-color: white;
+}
+
+#header p {
+    font-size: 50px;
+    float: right;
+    color: red;
+    margin-right: 20px;
+}
+
+#header img {
+    margin-left: 20px;
+}
+
+
+nav {
+    background: #2874A6;
+    text-align: center;
+
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+nav ul li {
+    width: 140px;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+
+}
+
+/*.active,*/
+nav ul li:hover {
+
+    background: #5DADE2;
+    transition: .5s;
+    border-radius: 3px;
+}
+
+/*
+.active1,
+nav ul li:hover {
+    background: #5DADE2;
+    transition: .5s;
+    border-radius: 3px;
+}
+*/
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+nav .fa {
+    margin-right: 8px;
+}
+
+
+
+/*
+.checkbtn {
+    float: right;
+    margin-right: 40px;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.logo1 {
+    float: left;
+    margin-left: 40px;
+    color: blue;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 60px;
+    display: none;
+
+}
+
+@media (max-width:1048px) {
+    label.logo1 {
+        display: block;
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:909px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2f3640;
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        transition :all .5s;
+    }
+
+    nav ul {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+   
+    a:hover,a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ nav{
+        left: 0;
+    }
+}
+*/
+
+
+
+.sub_nav_1 {
+    display: none;
+}
+
+nav ul li:hover .sub_nav_1 {
+    display: block;
+    position: absolute;
+    background-color: #2874A6;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+nav ul li:hover .sub_nav_1 ul {
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .sub_nav_1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+nav ul li:hover .sub_nav_1 ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub_nav_1 ul li a:hover {
+    color: red;
+}
+
+
+
+.sub_nav_2 {
+    display: none;
+}
+
+nav ul li:hover .sub_nav_2 {
+    display: block;
+    position: absolute;
+    background-color: #2874A6;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+nav ul li:hover .sub_nav_2 ul {
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .sub_nav_2 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+nav ul li:hover .sub_nav_2 ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub_nav_2 ul li a:hover {
+    color: red;
+}
+
+
+
+.sub_nav_3 {
+    display: none;
+}
+
+nav ul li:hover .sub_nav_3 {
+    display: block;
+    position: absolute;
+    background-color: #2874A6;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+nav ul li:hover .sub_nav_3 ul {
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .sub_nav_3 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+nav ul li:hover .sub_nav_3 ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub_nav_3 ul li a:hover {
+    color: red;
+}
+
+
+
+
+
+.log{
+    float: right;
+    color: #2874A6;
+    border: solid 1px #2874A6;
+    margin: 5px 20px 0 0 ;
+}
+.log a{
+    text-decoration: none;
+    color: #3498DB;
+}
+.service_box {
+    display: inline-block;
+/*    float: right;*/
+    margin: 30px 16px 50px 20px;;
+/*    margin-top: 30px;*/
+/*
+    padding-right: 0px;
+    padding-top: 0px;
+*/
+    border: solid #2874A6 1px;
+    border-radius: 5px;
+
+}
+
+.service_box li:before {
+    content: '\00BB';
+}
+
+.box1 {
+
+    background-color: #2874A6;
+    /*    color: white;*/
+    height: 60px;
+    width: 96vw;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.box1 p {
+    /*    font-size: 20px;*/
+    /*    margin-bottom: 20px;*/
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: #2874A6;
+    color: white;
+}
+
+.service_box li {
+    margin-left: 0px;
+    display: block;
+    padding: 10px 10px;
+    border-bottom: 1px dotted black;
+}
+
+.service_box li:last-child {
+    border-bottom: none;
+}
+
+.service_box li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.service_box li a:hover {
+    font-size: 20px;
+    color: #3498DB;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    margin-top: auto;
+    /*    background-color: red;*/
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+.footer_col {
+    width: 25%;
+    padding: 30px 20px 0 20px;
+    ;
+}
+
+.footer {
+    background-color: #34495e;
+}
+
+.footer_col h4 {
+    border-bottom: #de3163 solid 2px;
+    
+    /*    margin: 30px 0 0 20px;;*/
+    font-size: 18px;
+    /*    padding-bottom: 10px;*/
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.footer_col ul {
+    padding-top: 15px;
+}
+
+.footer_col ul li {
+    padding-top: 10px;
+    border-bottom: dotted white 2px;
+}
+
+.footer_col ul li a { 
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*
+.footer_col ul li:before{
+    content: '\00BB';
+    color: white;
+    padding-right: 2px;
+
+}
+*/
+
+.footer_col ul li a:hover {
+    padding-left: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.copy_bar{
+    color: white;
+    height: 35px;
+    width: 98.7vw;
+    background-color: #032444;
+}
+.copy_bar p{
+    padding: 8px;
+    text-align: center;
+}
+
